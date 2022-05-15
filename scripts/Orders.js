@@ -18,7 +18,7 @@ const buildOrderListItem = (order) => {
     const foundStyles = styles.find((style) => {
         return style.id === order.styleId
     })
-    const totalCost = (foundMetal.price + foundSizes.price + foundStyles.price) //* document.querySelector('input[name="type"]:checked').value
+    const totalCost = (foundMetal.price + foundSizes.price + foundStyles.price) 
     const costString = totalCost.toLocaleString("en-US", {
         style: "currency",
         currency: "USD"
@@ -47,15 +47,15 @@ export const Orders = () => {
 
 
 
-
-document.addEventListener(
-    "change",
-    (event) => {
-        if (event.target.id === "orderButton") {
-            Orders()
-            addCustomOrder()
-        }
-    }
-)
+//idk why this is even here 
+//document.addEventListener(
+  //  "change",
+    //(event) => {
+      //  if (event.target.id === "orderButton") {
+        //    addCustomOrder()
+          //  Orders()
+       // }
+   // }
+//)
 
 

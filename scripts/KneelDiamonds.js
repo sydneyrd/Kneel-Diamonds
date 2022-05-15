@@ -11,12 +11,12 @@ document.addEventListener(
     "click",
     (event) => {
         if (event.target.id === "orderButton") {
+            addCustomOrder()
             
             
             const orderHTML = document.querySelector(".orders")
-            // orderHTML.innerHTML += addCustomOrder()
+             orderHTML.innerHTML += Orders()
             
-            addCustomOrder()
            
             const ckbxs = document.querySelectorAll('input[name="type"], input[name="metal"], input[name="size"], input[name="style"]' )
             ckbxs.forEach(ckbx => ckbx.checked = false)
@@ -51,7 +51,7 @@ export const KneelDiamonds = () => {
 
         <article class="customOrders">
             <h2>Custom Jewelry Orders</h2>
-    ${Orders()}
+            <ul class="orders"></ul>
         </article>
     `
 }

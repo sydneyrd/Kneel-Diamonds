@@ -1,4 +1,7 @@
 import { getMetals, setMetal } from "./database.js"
+
+const metals = getMetals()
+
 document.addEventListener(
     "change",
     (event) => {
@@ -10,7 +13,6 @@ document.addEventListener(
 
 
 
-const metals = getMetals()
 
 document.addEventListener(
     "change",

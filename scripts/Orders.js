@@ -47,7 +47,7 @@ export const Orders = () => {
 
 
 
-//idk why this is even here 
+//idk why this is even here it was supposed to do the same thing, idk why i'm saving it.  just in case i guess.
 //document.addEventListener(
   //  "change",
     //(event) => {

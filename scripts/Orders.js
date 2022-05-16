@@ -33,10 +33,11 @@ export const Orders = () => {
     */
    // gets copy of the 'orders' array from database.js
     const orders = getOrders()
-
-    const listItem = orders.find(order => orders.indexOf(order) === orders.length - 1)
-
-    const html = buildOrderListItem(listItem)
+let html = "<ul>"
+    const listItems = orders.map(buildOrderListItem)
+    ////const listItem = orders.join(listItems)
+html += listItems.join("")
+   html +=  "</ul>"
 
     return html
 }
